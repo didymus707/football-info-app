@@ -3,7 +3,6 @@ import client from '../../service/client';
 
 export const fetchCompetitions = createAsyncThunk('competition/fetchCompetitions', async (url) => {
   const response = await client(url);
-  console.log(response);
   return response;
 });
 

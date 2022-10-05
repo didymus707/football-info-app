@@ -1,11 +1,13 @@
-import './App.css';
+import { Box } from '@chakra-ui/react';
+import Areas from './components/Area';
 import Competitions from './components/Competitions';
 
 function App() {
   return (
-    <div className="App">
+    <Box>
       <Competitions />
-    </div>
+      <Areas />
+    </Box>
   );
 }
 
