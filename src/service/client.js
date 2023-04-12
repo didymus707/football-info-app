@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "https://api.football-data.org/v2",
+  baseURL: "https://api.football-data.org/v4",
   headers: { "X-Auth-Token": process.env.REACT_APP_TOKEN },
 });
 

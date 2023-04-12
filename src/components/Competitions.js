@@ -20,12 +20,10 @@ const Competitions = () => {
     countries = [...countries, ...parents];
   }
 
-  const eachCountry = [...new Set(countries)]
-
-  console.log("countries", eachCountry);
+  const eachCountry = [...new Set(countries)];
 
   useEffect(() => {
-    dispatch(fetchCompetitions("/competitions"));
+    dispatch(fetchCompetitions("/competitions/PL"));
   }, []);
 
   return <div>Welcome to Competitions</div>;
